@@ -1,0 +1,43 @@
+﻿@model IEnumerable<LibraryMvc.Models.Book>
+@{
+    ViewData["Title"] = $"Book list ({Model.Count()} items)";
+}
+<p class="h3">ICT library</p>
+<div class="mb-3">
+    <a asp-action="Create" class="btn btn-outline-primary">Create New</a>
+</div>
+<form class="input-group w-50 float-right" asp-action="Search" method="get">
+    <input type="text" class="form-control" placeholder="Search for" name="term" />
+    <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="submit">Search</button>
+    </div>
+</form>
+<table class="table table-hover table-sm">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Name)</th>
+            <th>@Html.DisplayNameFor(model => model.Authors)</th>
+            <th>@Html.DisplayNameFor(model => model.Publisher)</th>
+            <th>@Html.DisplayNameFor(model => model.Year)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+                <tr>
+                    <td><a asp-route-id="@item.Id" asp-action="Details">@item.Name</a></td>
+                    <td>@item.Authors</td>
+                    <td>@item.Publisher</td>
+                    <td>@item.Year</td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-info">Details</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">Delete</a>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-warning">Edit</a>
+                        <a asp-action="Read" asp-route-id="@item.Id" class="btn btn-sm btn-outline-dark">Read</a>
+                    </td>
+                </tr>
+        }
+        <tr><td colspan="5"><strong>Tổng số: @Model.Count()</strong></td></tr>
+    </tbody>
+</table>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfBook xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Book>
+    <DataFile>abc</DataFile>
+    <Id>1</Id>
+    <Name>ASP.NET Core for dummy</Name>
+    <Authors>Trump D.</Authors>
+    <Publisher>Washington</Publisher>
+    <Year>2020</Year>
+  </Book>
+  <Book>
+    <DataFile>abc</DataFile>
+    <Id>2</Id>
+    <Name>Pro ASP.NET Core</Name>
+    <Authors>Putin V.</Authors>
+    <Publisher>Moscow</Publisher>
+    <Year>2020</Year>
+  </Book>
+  <Book>
+    <DataFile>abc</DataFile>
+    <Id>3</Id>
+    <Name>ASP.NET Core Video course</Name>
+    <Authors>Obama B.</Authors>
+    <Publisher>Washington</Publisher>
+    <Year>2020</Year>
+  </Book>
+  <Book>
+    <DataFile>abc</DataFile>
+    <Id>4</Id>
+    <Name>Programming ASP.NET Core MVC</Name>
+    <Authors>Clinton B.</Authors>
+    <Publisher>Washington</Publisher>
+    <Year>2020</Year>
+  </Book>
+  <Book>
+    <DataFile>DichHDH-Chuong5.pdf</DataFile>
+    <Id>5</Id>
+    <Name>ASP.NET Core Razor Pages</Name>
+    <Authors>Yelstin B.</Authors>
+    <Publisher>Moscow</Publisher>
+    <Year>2020</Year>
+    <Description>1234
+</Description>
+  </Book>
+</ArrayOfBook>
